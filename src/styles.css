@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: #f8f1f1;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+.about-page h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-page p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.about-page ul li {
+  font-size: 1.1rem;
+  color: #444;
+}
