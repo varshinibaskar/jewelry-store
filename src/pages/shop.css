@@ -9,15 +9,14 @@
 
 .shop-container h1 {
   margin-bottom: 30px;
-  color: #b8860b; /* golden accent */
+  color: #b8860b; 
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-/* Filter section */
 .filters {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center; 
   gap: 30px;
   margin-bottom: 40px;
   flex-wrap: wrap;
@@ -26,7 +25,7 @@
 .filters div {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center label + select vertically */
+  align-items: center; 
 }
 
 .filters label {
@@ -45,18 +44,16 @@
 }
 
 .filters select:hover {
-  border-color: #b8860b; /* golden highlight */
+  border-color: #b8860b; 
 }
 
-/* Product grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  justify-items: center; /* Center each card in its grid cell */
+  justify-items: center; 
 }
 
-/* Individual product card */
 .product-card {
   border: 1px solid #eee;
   border-radius: 12px;
@@ -64,7 +61,7 @@
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
-  width: 220px; /* Fixed width for consistent centering */
+  width: 220px; 
 }
 
 .product-card:hover {
@@ -72,7 +69,6 @@
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Product image */
 .product-card img {
   width: 100%;
   height: 200px;
@@ -81,22 +77,19 @@
   margin-bottom: 12px;
 }
 
-/* Product title */
 .product-card h3 {
   font-size: 1.15rem;
   margin: 10px 0 5px;
   color: #333;
 }
 
-/* Product price */
 .product-card p {
   font-weight: bold;
-  color: #b8860b; /* golden color */
+  color: #b8860b; 
   margin-bottom: 12px;
   font-size: 1.05rem;
 }
 
-/* View Details link / button */
 .product-card a,
 .product-card button {
   display: inline-block;
@@ -116,7 +109,6 @@
   background-color: #d4af37;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

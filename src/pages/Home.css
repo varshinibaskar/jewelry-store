@@ -1,0 +1,134 @@
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 450px; /* uniform height for slider */
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%; /* match slider height */
+  object-fit: cover; /* maintain aspect ratio, crop if necessary */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 50px 0 30px 0;
+}
+
+.category {
+  text-align: center;
+  width: 150px; /* uniform width */
+  height: 150px; /* uniform height */
+}
+
+.category img {
+  width: 100%;
+  height: 100%; /* match container */
+  object-fit: cover; /* maintain aspect ratio */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.category img:hover {
+  transform: scale(1.05);
+}
+
+.category p {
+  margin-top: 8px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Collections */
+.collections {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 50px 20px;
+}
+
+.collection {
+  position: relative;
+  width: 300px; /* uniform width */
+  height: 300px; /* uniform height */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%; /* match container */
+  object-fit: cover; /* crop or scale */
+}
+
+.collection h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+/* Featured */
+.featured {
+  text-align: center;
+  margin: 60px 20px;
+}
+
+.featured h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #d4af37;
+}
+
+.featured-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.item {
+  width: 200px; /* uniform width */
+  height: 250px; /* uniform height including text */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: 150px; /* uniform height for images */
+  object-fit: cover;
+}
+
+.item p {
+  margin: 10px 0;
+  font-size: 15px;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+.order-success-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.back-to-shop-btn {
+  background-color: #d4af37;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-to-shop-btn:hover {
+  background-color: #c19e34;
+}
