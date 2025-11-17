@@ -97,6 +97,18 @@ const Home = () => {
         </div>
       </section>
       <section className="craft-section">
+        <div className="craft-left">
+           <div
+  className="craft-image"
+  style={{
+    backgroundImage: "url(/images/jewelry-about.jpg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+></div>
+
+</div>
         <div className="craft-image"></div>
         <div className="craft-text-box">
           <h2 className="section-heading">Exceptional Craftsmanship</h2>
@@ -104,6 +116,7 @@ const Home = () => {
             Every step of our process is guided by passion—from hand–selecting gemstones to refining the smallest details. Our artisans treat each creation like a work of art, ensuring flawless finish, durability, and unmatched elegance.
           </p>
         </div>
+
       </section>
       <section className="values-section">
         <h2 className="section-heading">Our Values</h2>
