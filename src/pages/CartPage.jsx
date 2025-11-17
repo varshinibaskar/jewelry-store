@@ -30,16 +30,19 @@ const CartPage = () => {
           <div className="cart-items">
             {cartItems.map((item) => (
               <div key={item.id} className="cart-item">
+                
                 <img
                   src={item.image}
                   alt={item.name}
                   className="cart-item-image"
+                  onClick={() => navigate(`/product/${item.id}`)}
                 />
 
                 <div className="cart-item-details">
-                  <h3>{item.name}</h3>
+                  <h3 onClick={() => navigate(`/product/${item.id}`)}>
+                    {item.name}
+                  </h3>
 
-                  {/* Quantity Controls */}
                   <div className="quantity-controls">
                     <button
                       className="qty-btn"
@@ -58,12 +61,11 @@ const CartPage = () => {
                     </button>
                   </div>
 
-                  {/* Price */}
                   <p className="item-price">
-                    Price: ${item.price * item.quantity}
+                    ₹{item.price} × {item.quantity} ={" "}
+                    <strong>₹{item.price * item.quantity}</strong>
                   </p>
 
-                  {/* Remove Button */}
                   <button
                     className="remove-btn"
                     onClick={() => removeFromCart(item.id)}
@@ -75,9 +77,8 @@ const CartPage = () => {
             ))}
           </div>
 
-          {/* Summary */}
           <div className="cart-summary">
-            <h2>Total: ${getTotalAmount()}</h2>
+            <h2>Total: ₹{getTotalAmount()}</h2>
 
             <div className="cart-actions">
               <button className="clear-btn" onClick={clearCart}>
@@ -96,9 +97,3 @@ const CartPage = () => {
 };
 
 export default CartPage;
-
-
-
-
-
-

@@ -1,17 +1,68 @@
 .order-success-container {
   text-align: center;
-  padding: 80px 20px;
+  padding: 50px 20px;
+  background: #fffaf5;
+  min-height: 80vh;
+}
+
+.order-success-container h1 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.order-success-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.order-summary {
+  background: white;
+  width: 60%;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.order-summary h2 {
+  color: #b8860b;
+  margin-bottom: 10px;
+}
+
+.order-summary ul {
+  margin-left: 20px;
+}
+
+.invoice-btn {
+  background-color: #b8860b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.invoice-btn:hover {
+  background-color: #d4af37;
 }
 
 .back-to-shop-btn {
-  background-color: #d4af37;
+  padding: 10px 20px;
+  background-color: #222;
   color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 8px;
 }
 
 .back-to-shop-btn:hover {
-  background-color: #c19e34;
+  background: #444;
 }
+
+.button-group {
+  margin-top: 20px;
+}
+

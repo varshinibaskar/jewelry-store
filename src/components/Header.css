@@ -10,7 +10,6 @@
   z-index: 100;
 }
 
-/* Left section: Logo + Brand */
 .logo-section {
   display: flex;
   align-items: center;
@@ -30,7 +29,6 @@
   letter-spacing: 3px;
 }
 
-/* Center: Search bar */
 .search-section {
   flex: 1;
   display: flex;

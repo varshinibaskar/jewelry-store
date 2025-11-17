@@ -134,96 +134,94 @@ export const products = [
     category: "Diamond",
     subcategory: "Anklet"
   },
-  // Products 16-25 updated
-{
-  id: 16,
-  name: "Gold Bangle",
-  price: 2200,
-  image: "/images/bangle.jpg",
-  description: "Elegant gold bangle to enhance your traditional look.",
-  category: "Gold",
-  subcategory: "Bangle"
-},
-{
-  id: 17,
-  name: "Diamond Ring",
-  price: 12000,
-  image: "/images/rings2.jpg",
-  description: "Stunning diamond ring with timeless elegance.",
-  category: "Diamond",
-  subcategory: "Ring"
-},
-{
-  id: 18,
-  name: "Diamond Bracelet",
-  price: 10000,
-  image: "/images/rings1.jpg",
-  description: "Elegant diamond bracelet for a classy look.",
-  category: "Diamond",
-  subcategory: "Bracelet"
-},
-{
-  id: 19,
-  name: "Gold Jhumka",
-  price: 1500,
-  image: "/images/jhumkha1.jpg",
-  description: "Traditional gold jhumka earrings for festive wear.",
-  category: "Gold",
-  subcategory: "Jhumka"
-},
-{
-  id: 20,
-  name: "Gold Pendant",
-  price: 1800,
-  image: "/images/gold_pendent.jpg",
-  description: "Beautiful gold pendant to complement your outfit.",
-  category: "Gold",
-  subcategory: "Pendant"
-},
-{
-  id: 21,
-  name: "Gold Bangle",
-  price: 2200,
-  image: "/images/gold_bangle.jpg",
-  description: "Stylish gold bangle for a traditional look.",
-  category: "Gold",
-  subcategory: "Bangle"
-},
-{
-  id: 22,
-  name: "Gold Earrings",
-  price: 1300,
-  image: "/images/earrings2.jpg",
-  description: "Classic gold earrings for everyday wear.",
-  category: "Gold",
-  subcategory: "Earring"
-},
-{
-  id: 23,
-  name: "Diamond Earrings",
-  price: 5000,
-  image: "/images/earrings1.jpg",
-  description: "Sparkling diamond earrings for a classy appearance.",
-  category: "Diamond",
-  subcategory: "Earring"
-},
-{
-  id: 24,
-  name: "Diamond Bangle",
-  price: 6000,
-  image: "/images/diamond_bangle.jpg",
-  description: "Elegant diamond bangle for festive occasions.",
-  category: "Diamond",
-  subcategory: "Bangle"
-},
-{
-  id: 25,
-  name: "Diamond Bangle",
-  price: 6500,
-  image: "/images/diamond_ban.jpg",
-  description: "Stylish diamond bangle with exquisite design.",
-  category: "Diamond",
-  subcategory: "Bangle"
-}
-
+  {
+    id: 16,
+    name: "Gold Bangle",
+    price: 2200,
+    image: "/images/bangle.jpg",
+    description: "Elegant gold bangle to enhance your traditional look.",
+    category: "Gold",
+    subcategory: "Bangle"
+  },
+  {
+    id: 17,
+    name: "Diamond Ring",
+    price: 12000,
+    image: "/images/rings2.jpg",
+    description: "Stunning diamond ring with timeless elegance.",
+    category: "Diamond",
+    subcategory: "Ring"
+  },
+  {
+    id: 18,
+    name: "Diamond Bracelet",
+    price: 10000,
+    image: "/images/rings1.jpg",
+    description: "Elegant diamond bracelet for a classy look.",
+    category: "Diamond",
+    subcategory: "Bracelet"
+  },
+  {
+    id: 19,
+    name: "Gold Jhumka",
+    price: 1500,
+    image: "/images/jhumkha1.jpg",
+    description: "Traditional gold jhumka earrings for festive wear.",
+    category: "Gold",
+    subcategory: "Jhumka"
+  },
+  {
+    id: 20,
+    name: "Gold Pendant",
+    price: 1800,
+    image: "/images/gold_pendent.jpg",
+    description: "Beautiful gold pendant to complement your outfit.",
+    category: "Gold",
+    subcategory: "Pendant"
+  },
+  {
+    id: 21,
+    name: "Gold Bangle",
+    price: 2200,
+    image: "/images/gold_bangle.jpg",
+    description: "Stylish gold bangle for a traditional look.",
+    category: "Gold",
+    subcategory: "Bangle"
+  },
+  {
+    id: 22,
+    name: "Gold Earrings",
+    price: 1300,
+    image: "/images/earrings2.jpg",
+    description: "Classic gold earrings for everyday wear.",
+    category: "Gold",
+    subcategory: "Earring"
+  },
+  {
+    id: 23,
+    name: "Diamond Earrings",
+    price: 5000,
+    image: "/images/earrings1.jpg",
+    description: "Sparkling diamond earrings for a classy appearance.",
+    category: "Diamond",
+    subcategory: "Earring"
+  },
+  {
+    id: 24,
+    name: "Diamond Bangle",
+    price: 6000,
+    image: "/images/diamond_bangle.jpg",
+    description: "Elegant diamond bangle for festive occasions.",
+    category: "Diamond",
+    subcategory: "Bangle"
+  },
+  {
+    id: 25,
+    name: "Diamond Bangle",
+    price: 6500,
+    image: "/images/diamond_ban.jpg",
+    description: "Stylish diamond bangle with exquisite design.",
+    category: "Diamond",
+    subcategory: "Bangle"
+  }
 ];

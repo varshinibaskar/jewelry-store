@@ -8,7 +8,7 @@ const Footer = () => (
       padding: "15px 0"            
     }}
   >
-    <p>&copy; 2025 Jewelry Store. All rights reserved.</p>
+    <p>&copy; 2025 Lumyn Jewelry Store. All rights reserved.</p>
   </footer>
 );
 

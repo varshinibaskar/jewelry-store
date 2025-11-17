@@ -9,8 +9,8 @@ const Shop = () => {
   const navigate = useNavigate();
 
   const queryParams = new URLSearchParams(location.search);
-  const collectionQuery = queryParams.get("collection"); // e.g., "Gold Collection"
-  const searchQuery = queryParams.get("search") || "";    // e.g., from header search
+  const collectionQuery = queryParams.get("collection"); 
+  const searchQuery = queryParams.get("search") || "";    
 
   const categories = ["All", "Gold", "Diamond"];
   const subcategories = ["All", "Ring", "Earring", "Jhumka", "Bracelet", "Bangle", "Necklace", "Nosepin"];
@@ -19,19 +19,15 @@ const Shop = () => {
   const [selectedSubcategory, setSelectedSubcategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState(searchQuery);
 
-  // Update filters when URL query changes
   useEffect(() => {
-    // Collection filter
+    
     if (collectionQuery) {
       setSelectedCategory(collectionQuery.includes("Gold") ? "Gold" : "Diamond");
       setSelectedSubcategory("All");
-      setSearchTerm(""); // reset search when navigating via collection
+      setSearchTerm(""); 
     }
-
-    // Search filter
     if (searchQuery) {
       setSearchTerm(searchQuery);
-      // Optional: auto-select category/subcategory if exact match found
       const foundProduct = products.find(
         (p) =>
           p.category.toLowerCase() === searchQuery.toLowerCase() ||
@@ -44,7 +40,6 @@ const Shop = () => {
     }
   }, [collectionQuery, searchQuery]);
 
-  // Filter products
   const filteredProducts = products.filter((product) => {
     const categoryMatch = selectedCategory === "All" || product.category === selectedCategory;
     const subcategoryMatch = selectedSubcategory === "All" || product.subcategory === selectedSubcategory;
@@ -56,22 +51,30 @@ const Shop = () => {
     return categoryMatch && subcategoryMatch && searchMatch;
   });
 
-  // Handle typing in shop search bar
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Navigate with search query in URL
     navigate(`/shop?search=${encodeURIComponent(searchTerm)}`);
   };
 
   return (
-    <div className="shop-container">
-      <h1>Shop</h1>
+  <div className="shop-container">
+      <div className="shop-banner">
+        <img
+          src="\images\banner.jpg"
+          alt="Jewellery Banner"
+          className="banner-image"
+        />
+        <div className="banner-text">
+          <h2>Elegance That Shines</h2>
+          <p>Discover timeless gold & diamond collections crafted to perfection.</p>
+        </div>
+      </div>
 
-      {/* SEARCH BAR */}
+      <h1>Shop</h1>
       <div className="search-bar">
         <form onSubmit={handleSearchSubmit}>
           <input
@@ -84,7 +87,6 @@ const Shop = () => {
         </form>
       </div>
 
-      {/* FILTERS */}
       <div className="filters">
         <div>
           <label>Category:</label>
@@ -105,16 +107,17 @@ const Shop = () => {
         </div>
       </div>
 
-      {/* PRODUCTS */}
       <div className="product-grid">
         {filteredProducts.length > 0 ? (
-          filteredProducts.map((product) => <ProductCard key={product.id} product={product} />)
+          filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))
         ) : (
           <p>No products found.</p>
         )}
       </div>
-    </div>
-  );
+  </div>
+);
 };
 
 export default Shop;
