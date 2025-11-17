@@ -8,7 +8,6 @@
 .hero-section {
   position: relative;
   height: 70vh;
-  background-image: url('D:\E-COMMERCE\jewelry-store\client\public\images\hero-jewelry.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -75,7 +74,6 @@
 
 .craft-image {
   flex: 1;
-  background-image: url('D:\E-COMMERCE\jewelry-store\client\public\images\jewelry-about.jpg'); /* Replace */
   background-size: cover;
   background-position: center;
   border-radius: 15px;
